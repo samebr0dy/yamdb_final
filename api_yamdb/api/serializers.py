@@ -1,8 +1,7 @@
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
-from django.shortcuts import get_object_or_404
 from rest_framework.validators import UniqueTogetherValidator
-
+from django.shortcuts import get_object_or_404
 from reviews.models import Category, Comment, Genre, Review, Title, User
 
 
@@ -88,8 +87,7 @@ class CreateTitleDefault(object):
     def __call__(self, serializer_field):
         view = serializer_field.context['view']
         title_id = view.kwargs.get('title_id')
-        title = get_object_or_404(Title, pk=title_id)
-        return title
+        return get_object_or_404(Title, pk=title_id)
 
 
 class ReviewSerializer(serializers.ModelSerializer):
