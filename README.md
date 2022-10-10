@@ -137,4 +137,15 @@ nginx
 
 ---
 
+## Адреса сайта
+
+http://51.250.20.122/api/v1/
+
+http://51.250.20.122/admin
+
+http://51.250.20.122/redoc
+
+---
+
 [![YaMDb DRF Workflow](https://github.com/samebr0dy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/samebr0dy/yamdb_final/actions/workflows/yamdb_workflow.yml)
+
