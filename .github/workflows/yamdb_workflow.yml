@@ -81,10 +81,8 @@ jobs:
       - name: HTTP Status
         uses: lakuapik/gh-actions-http-status@v1
         with:
-          # List website urls in JSON (eg: ["http://github.com", "https://education.github.com"])
-          sites: '["http://51.250.20.122/redoc/",]'
-          # List expected HTTP status codes in JSON (eg: [301, 200])
-          expected: '[200,]'
+          sites: '["http://51.250.20.122/redoc/","http://51.250.20.122/api/v1/"]'
+          expected: '[200, 200]'
 
   send_message:
     name: Send message in Telegram
