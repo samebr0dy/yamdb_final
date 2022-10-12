@@ -13,7 +13,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: br0dy/yamdb_final-web:latest
+    image: br0dy/yamdb_final:latest
     restart: always
     volumes:
       # Контейнер web будет работать с данными, хранящиеся в томе static_value, 
